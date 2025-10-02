@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <script>
+        function playGame(){
+            console.log("game function was called")
+
+            let roll1 = random();
+
+            let roll2 = random();
+
+            console.log("roll 1= " + roll1)
+            console.log("roll 2= " + roll2)
+
+            let sum = roll1 + roll2;
+            if (sum == 7 || SUM == 11){
+                console.log("you lose");
+            }
+            else if(roll1 == roll2){
+                
+            }
+        } 
+
+        function random(){
+            let dice = Math.ceil(Math.random()* 6)
+            return dice
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Game</h1>
+    </header>
+
+    <main>
+        <button onclick="playGame()">Play game</button>
+    </main>
+    
+</body>
+</html>
