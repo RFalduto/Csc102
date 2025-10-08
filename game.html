@@ -5,30 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
 
-    <script>
-        function playGame(){
-            console.log("game function was called")
+    <link rel="stylesheet" href="../Intro to programming/css.css">
 
-            let roll1 = random();
+    <script src="game js code.js">
 
-            let roll2 = random();
-
-            console.log("roll 1= " + roll1)
-            console.log("roll 2= " + roll2)
-
-            let sum = roll1 + roll2;
-            if (sum == 7 || SUM == 11){
-                console.log("you lose");
-            }
-            else if(roll1 == roll2){
-                
-            }
-        } 
-
-        function random(){
-            let dice = Math.ceil(Math.random()* 6)
-            return dice
-        }
     </script>
 </head>
 <body>
@@ -38,6 +18,11 @@
 
     <main>
         <button onclick="playGame()">Play game</button>
+
+        <div id="roll1">roll 1</div>
+        <div id="roll2">roll 2</div>
+        <div id="sum">sum</div>
+        <div id="result">result</div>
     </main>
     
 </body>
