@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js code.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Input</h1>
+    </header>
+    <main>
+        <!-- div message placeholder -->
+        <div id="message"></div>
+        <!-- create form -->
+        <form method="post" action="#" name="frmInput" id="frmInput" onsubmit="return validateform();">
+            <!-- make labels and input boxes -->
+            <label for="txtFirstName">First Name:</label>
+            <input type="text" name="txtFirstName" id="txtFirstName">
+            <label for="txtLastName">Last Name:</label>
+            <input type="text" name="txtLastName" id="txtLastName">
+            <label for="txtZipCode">Zip Code:</label>
+            <input type="text" name="txtZipCode" id="txtZipCode">
+
+            <br>
+            <!-- submit button -->
+            <button type="submit">Save Input</button>
+        </form>
+    </main>
+</body>
+</html>
