@@ -75,4 +75,36 @@
 
             }
 
+        let invervalId = 0;
+        // Start moving the image
+        function startMove(){
+            //shortcut to the image
+            let img = document.getElementById("test");
+            //store the current invertval id
+            invervalId = setInterval(function(){
+                let xCord = getRandomInt();
+                let yCord = getRandomInt();
+                //change the cord
+                img.style.left = xCord + "px";
+                img.style.top = yCord + "px";
+                img.style.position = "absolute";
+            }, 1000);
+            //disable start button
+            document.getElementById("btnStart").disabled = true;
+            //enable stop button
+            document.getElementById("btnStop").disabled = false;
+        }
+        // randomly generate a number
+        function getRandomInt() {
+            return Math.floor(Math.random() * 800);
+        }
+        // Stop moving the image
+        function stopMove(){
+            clearInterval(invervalId);
+            //enable start button
+            document.getElementById("btnStart").disabled = false;
+            //disable stop button
+            document.getElementById("btnStop").disabled = true;
+        }
+
 
