@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Palindrome Tester</h1>
+    </header>
+    <main>
+        <form onsubmit="return false;">
+            <label for="textInput">Word to test: </label>
+            <input type="text" id="textInput" required>
+
+            <button onclick="PalindromeTest();">Test Word</button>
+        </form>
+
+        <div id="results"></div>
+    </main>
+
+    <script>
+        function PalindromeTest(){
+            let userinput = document.getElementById("textInput").value.trim();
+            console.log(userinput);
+        }
+
+        function ispalindrome(wtt){
+            let cleanedword = wtt.replace(/\s/g, "");
+            
+        }
+    </script>
+    
+</body>
+</html>
