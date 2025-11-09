@@ -107,4 +107,42 @@
             document.getElementById("btnStop").disabled = true;
         }
 
+        function PalindromeTest(){
+            // get user input
+            let userinput = document.getElementById("textInput").value.trim();
+            console.log(userinput);
+
+            // test if palindrome
+            if (ispalindrome(userinput)){
+                document.getElementById("results").textContent = "yes, " + userinput + " is a palindrome!";
+            } else {
+                document.getElementById("results").textContent = "no, " + userinput + " is not a palindrome.";
+            }
+        }
+
+        function ispalindrome(wtt){
+            // remove spaces
+            let cleanedword = wtt.replace(/\s/g, "");
+
+            // convert to lowercase
+            
+            cleanedword = cleanedword.toLowerCase();
+
+            // split into array
+
+            let arrcleanedword = cleanedword.split("");
+            // reverse array
+
+            arrcleanedword = arrcleanedword.reverse();
+            // join array back into string
+
+            let reversedword = arrcleanedword.join("");
+
+            // compare cleaned word to reversed word
+
+            return cleanedword == reversedword;
+
+
+        }
+
 
