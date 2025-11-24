@@ -145,4 +145,35 @@
 
         }
 
+        function addAudio() {
+            // Create a new audio element
+            let audioElement = document.createElement("audio");
+            // Set attributes for the audio element
+            audioElement.setAttribute("id", "audio1");
+            // Set the source of the audio file
+            audioElement.setAttribute("src", "us-lab-background.mp3");
+            audioElement.setAttribute("controls", "controls");
+
+            // Append the audio element to the div
+            document.getElementById("divAudio").appendChild(audioElement);
+
+            // hide add audio button after adding audio
+            document.getElementById("btnAddAudio").style.display = "none";
+
+            // Show play and pause buttons
+            document.getElementById("btnPlay").hidden = false;
+            document.getElementById("btnPause").hidden = false;
+
+        }
+        // Play audio function
+        function playAudio() {
+            let audio = document.getElementById("audio1");
+            audio.play();
+        }
+        // Pause audio function
+        function pauseAudio() {
+            let audio = document.getElementById("audio1");
+            audio.pause();
+        }
+
 
