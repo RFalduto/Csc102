@@ -176,4 +176,43 @@
             audio.pause();
         }
 
+        // define score
+    let score = 0;
+    //create buttons function
+    function createButtons() {
+        //for loop that makes 10 buttons
+        for (let i = 0; i < 10; i++) {
+            //create a html button
+            const button = document.createElement('button');
+            //define text
+            button.textContent = 'CLICK ME!';
+            //make the positoion fixed
+            button.style.position = 'fixed';
+            //set random position
+            button.style.left = Math.random() * 90 + '%';
+            button.style.top = Math.random() * 90 + '%';
+            button.style.padding = '5px 10px';
+            button.style.fontSize = '16px';
+            document.body.appendChild(button);
+        }
+        
+        const winButton = document.createElement('button');
+        winButton.textContent = 'CLICK ME';
+        winButton.style.position = 'fixed';
+        winButton.style.left = Math.random() * 90 + '%';
+        winButton.style.top = Math.random() * 90 + '%';
+        winButton.style.padding = '5px 10px';
+        winButton.style.fontSize = '16px';
+        winButton.onclick = () => {
+            score  = score + 1;
+            document.querySelector('h2').textContent = 'Score - ' + score;
+            document.querySelectorAll('button').forEach(btn => {
+                btn.style.left = Math.random() * 90 + '%';
+                btn.style.top = Math.random() * 90 + '%';
+            });
+        };
+        document.body.appendChild(winButton);
+    }
+    createButtons();
+
 
