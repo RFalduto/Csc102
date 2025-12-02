@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <main>
+        <h1>
+            programming mistakes
+        </h1>
+        <table id="tblData">
+            <caption>Programming mistakes and their costs.</caption>
+            <tr>
+                <td></td>
+                <th>Project</th>
+                <th>Year</th>
+                <th>Cost</th>
+            </tr>
+
+        </table>
+    </main>
+
+    <script>
+        function loadData(){
+            let arrProblems = [
+                ["Crowdstrike", 2024, "$5.4B"],
+                ["Facebook", 2020, "$90M"],
+                ["Citibank", 2020, "$900M"],
+                ["Mars Climate Orbiter",  1999, "$327M"]
+            ];
+        
+            for (let i=0; i<arrProblems.length; i++){
+                let tr = document.createElement("tr");
+
+                for (let j=0; j < arrProblems[i].length; j++){
+                    let td = document.createElement("td");
+                    td.textContent = arrProblems[i][j];
+                    tr.appendChild(td);
+                }
+                
+                document.getElementById("tblData").appendChild(tr);
+            }
+        }
+
+        loadData();
+
+    </script>
+    
+</body>
+</html>
