@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+
+    <style>
+        table{
+            max-width: 400px;
+            border-collapse: collapse;
+        }
+
+        tr,th,td{
+            padding: 10px;
+        }
+
+        tr{
+            border:2px solid rgb(0, 47, 150)
+        }
+        th{
+            background-color: rgb(215, 236, 255);
+        }
+        tr{
+            background-color: aliceblue;
+        }
+
+        tr:hover{
+            background-color: rgb(218, 238, 255);
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -13,7 +38,6 @@
         <table id="tblData">
             <caption>Programming mistakes and their costs.</caption>
             <tr>
-                <td></td>
                 <th>Project</th>
                 <th>Year</th>
                 <th>Cost</th>
@@ -43,6 +67,9 @@
                 document.getElementById("tblData").appendChild(tr);
             }
         }
+
+
+        
 
         loadData();
 
