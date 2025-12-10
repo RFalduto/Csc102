@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FinalProjectStylesheet.css">
+</head>
+
+<body>
+    <header>
+        <h1>Homepage</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="FinalProject POSTS.html">Posts</a></li>
+                <li><a href="FinalProject User Page.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown-container"></div>
+            <button id="toggleDropdown" onclick="toggleDropdown()">Show ▾</button>
+            <div id="dropdownContent" style="display:none;">
+            <section id="search">
+                <h1>Search Users</h1>
+                <input type="text" placeholder="Search...">
+                <button onclick="SearchUser()">Search</button>
+            </section>
+
+            <section id="DisplayUserInfo">
+                <h2>User Information</h2>
+                <div id="userInfo"></div>
+            </section>
+            </div>
+
+        <script>
+            function toggleDropdown() {
+                btn = document.getElementById('toggleDropdown');
+                content = document.getElementById('dropdownContent');
+                isHidden = content.style.display === 'none' || content.style.display === '';
+                if (isHidden) {
+                    content.style.display = 'block';
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.textContent = 'Hide▴';
+                } else {
+                    content.style.display = 'none';
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.textContent = 'Show ▾';
+                }
+            }
+        </script>
+    </main>
+    <script>
+        let users = {
+            "user1": {name: "Alice", age: 25, posts: 3},
+            "user2": {name: "Bob", age: 30, posts: 5},
+            "user3": {name: "Charlie", age: 22, posts: 2}
+        }
+
+        console.log(users);
+        function SearchUser() {
+            let input = document.querySelector("input").value.toLowerCase();
+            let userInfoDiv = document.getElementById("userInfo");
+            userInfoDiv.innerHTML = "";
+
+            if(users[input]) {
+                let user = users[input];
+                userInfoDiv.innerHTML = `<p>Name: ${user.name}</p>
+                                         <p>Age: ${user.age}</p>
+                                         <p>Posts: ${user.posts}</p>`;
+            } else {
+                userInfoDiv.innerHTML = "<p>User not found.</p>";
+            }
+        }
+    </script>
+    
+</body>
+</html>

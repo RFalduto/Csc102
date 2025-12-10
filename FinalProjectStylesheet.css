@@ -1,0 +1,112 @@
+h1{
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    text-align: center;
+}
+
+article{
+    text-align: center;
+}
+
+
+body{
+    background-color: #8bc0df91;
+    color:#000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section#accountInfo p#editable:hover{
+    font-weight: bold;
+    color: #000000;
+}
+
+article.post, .post {
+    outline: #00000096 2px solid;
+    box-sizing: border-box;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    width: calc(100% - 40px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center;
+    overflow: hidden;
+}
+
+article.post:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    background-color: #ffffffce;
+}
+
+section#search h1{
+    text-align: center;
+    -webkit-text-stroke: 1.3px #000;
+    -webkit-text-fill-color: hsl(0, 0%, 65%);
+    color: #006eff;
+    margin: 30px;
+    padding: 5px;
+}
+
+section#search{
+    text-align: center;
+
+    padding: 5px;
+}
+
+section#DisplayUserInfo{
+    box-sizing: border-box;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    width: calc(100% - 40px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center;
+    overflow: hidden;
+    text-align: center;
+
+    padding: 5px;
+}
+
+section#accountInfo{
+    text-align: center;
+    font-style: bold;
+    box-sizing: border-box;
+    background: #ecf6ffd8;
+    outline: rgb(143, 143, 143) solid 2px;
+    margin: 10px auto;
+    max-width: 700px;
+    min-height: 300px;
+
+    padding: 1px;
+}
+
+nav{
+    outline: rgb(0, 0, 0) solid 2px;
+    box-sizing: border-box;
+    display: block;
+    margin: 1px auto;
+    margin-right: 20px;
+    padding: 1px;
+    max-width: 135px;
+    width: calc(100% - 20px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: left;
+    overflow: hidden;
+}
