@@ -1,5 +1,5 @@
 body{
-	background: linear-gradient(to right, #071021, #0ea5a4, #6d28d9);
+	background: linear-gradient(90deg, #3564ff 0%, #191dff 100%);
 	background-attachment: fixed;
 	color: #e6f3ff;
 	font-family: "Times New Roman", Arial, serif;
@@ -18,13 +18,13 @@ h1{
 }
 
 h2{
-	color: #7ef9f3;
+	color: #df7e00;
 	text-shadow: 0 2px 10px rgba(126,249,243,0.18), 0 6px 30px rgba(13,160,153,0.06);
 	letter-spacing: 0.06em;
 }
 
 h3{
-	color: #ffd166;
+	color: #7a0000;
 	text-shadow: 0 2px 6px rgba(255,209,102,0.18);
 	letter-spacing: 0.04em;
 	text-decoration: underline wavy rgba(255,209,102,0.25);
