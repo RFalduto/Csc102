@@ -11,6 +11,46 @@ article{
     text-align: center;
 }
 
+img#test2 {
+    filter: brightness(1.8);
+    width: 100%; /* Adjust width to fill the container */
+    height: 100%; /* Maintain aspect ratio */
+    display: block;
+    position: absolute; /* Changed to absolute to prevent moving other elements */
+    top: 0; /* Align to the top of the page */
+    left: 0; /* Align to the left of the page */
+    z-index: -1; /* Send the image to the back */
+}
+img#gear {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    position: absolute;
+    z-index: 1;
+}
+
+img#hp {
+    width: 100%; /* Adjust width to fill the container */
+    height: 100%; /* Maintain aspect ratio */
+    display: block;
+    position: absolute; /* Changed to absolute to prevent moving other elements */
+    top: 0; /* Align to the top of the page */
+    left: 0; /* Align to the left of the page */
+    z-index: -1; /* Send the image to the back */
+}
+
+img#test {
+    width: 100%; /* Adjust width to fill half the container */
+    height: 10%; /* Maintain aspect ratio */
+    display: block;
+    position: absolute; /* Changed to absolute to prevent moving other elements */
+    top: 0; /* Align to the top of the page */
+    left: 0%; /* Center the image horizontally */
+    z-index: -1; /* Send the image to the back */
+    object-fit: cover;
+
+}
+
 
 body{
     background-color: #8bc0df91;
@@ -51,7 +91,7 @@ article.post:hover {
 section#search h1{
     text-align: center;
     -webkit-text-stroke: 1.3px #000;
-    -webkit-text-fill-color: hsl(0, 0%, 65%);
+    -webkit-text-fill-color: hsl(0, 0%, 90%);
     color: #006eff;
     margin: 30px;
     padding: 5px;
